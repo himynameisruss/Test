@@ -18,3 +18,12 @@ function openNav() {
 function closeNav() {
     document.getElementById("SideNav").style.width = "0";
 }
+
+function checkBoxes(){
+	var div = document.getElementById("CheckBoxes");
+	var checkboxes = div.getElementsByTagName("input");
+	for (var i = 0; i < checkboxes.length; i++){
+		var cb = checkboxes[0];
+		cb.checked = !cb.checked;
+	}
+}
