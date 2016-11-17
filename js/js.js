@@ -23,7 +23,7 @@ function checkBoxes(){
 	var div = document.getElementById("CheckBoxes");
 	var checkboxes = div.getElementsByTagName("input");
 	for (var i = 0; i < checkboxes.length; i++){
-		var cb = checkboxes[0];
+		var cb = checkboxes[i];
 		cb.checked = !cb.checked;
 	}
 }
